@@ -14,7 +14,7 @@ AS
 --    <>_T    Types
 --    <>_O    Object Types
 -- --------------------------------------------------------------------------------------
--- %author  Jimmy Brock
+-- %author  Jess Brock
 -- %version 1.0
 -- Date: 04-APR-2012
 --
@@ -22,8 +22,8 @@ AS
 --
 -- author:  Jess Brcok
 -- Date:    09-JUL-2012
--- Task:    
--- Description: 
+-- Task:
+-- Description:
 --
 -- --------------------------------------------------------------------------------------
 
@@ -142,19 +142,19 @@ AS
     END pl ;
 
     --------------------------------------------------------------------
-    -- PURPOSE: converts a variable string to a nested-table type 
+    -- PURPOSE: converts a variable string to a nested-table type
     --          that can be used in an SQL statement
     --
     -- %param   i_string   comma-delimited IN list
     --
     -- usage
     --    SELECT *
-    --    FROM   TABLE 
-    --                ( SELECT CAST( 
+    --    FROM   TABLE
+    --                ( SELECT CAST(
     --                               parse_list('abc, xyz, 012')
-    --                                  AS parse_list_tt 
-    --                             ) 
-    --                  FROM dual 
+    --                                  AS parse_list_tt
+    --                             )
+    --                  FROM dual
     --               )
     --
     -- dependency: type_parse_list_t
@@ -244,7 +244,7 @@ AS
    END is_date ;
 
    --------------------------------------------------------------------------------
-   -- PURPOSE: Checks to see if i_col_list contains valid column names owned 
+   -- PURPOSE: Checks to see if i_col_list contains valid column names owned
    --          by i_owner
    -- %param   col_list_in   list of column names to validate against all_tab_cols
    -- %return  boolean
@@ -327,7 +327,7 @@ AS
        RETURN l_retval ;
 
    END is_column_list_valid ;
-   
+
 
    --------------------------------------------------------------------------------
    -- PURPOSE: Return the OS_USER and IP_ADDRESS from SYS_CONTEXT
