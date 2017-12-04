@@ -427,4 +427,4 @@ AS
 
 END pkg_utility ;
 /
-show errors package body wiir.pkg_utility
+show errors package body pkg_utility
